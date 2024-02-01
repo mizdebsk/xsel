@@ -82,7 +82,7 @@ static Bool do_follow = False;
 static Bool no_daemon = False;
 
 /* logfile: name of file to log error messages to when detached */
-static char logfile[MAXFNAME];
+static char logfile[MAXFNAME+1];
 
 /* fstat() on stdin and stdout */
 static struct stat in_statbuf, out_statbuf;
